@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: examenFinal
+  datasource:
+    url: jdbc:postgresql://localhost:5433/amisolumi
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  logging:
+    level:
+      org.springframework.security: DEBUG
+jwt:
+  expiration: 300000
+  secret: demosecretkeyForSpringSecurityDemoApplication123456
+
+api:
+  token: sk_6845.96ie7hOGUnjhnMkIg9cqq5dQH8vA0b4y
